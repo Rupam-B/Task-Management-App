@@ -125,7 +125,22 @@ button{
 
 .last-para{
     color: wheat;
-    width: 100%;
     padding-left: 400px;
     opacity: 0.5;
 }
+
+
+@media only screen and (max-width: 600px) {
+    #heading-top{
+        padding-left:10px;
+    }
+    .to-do-box h2{
+        margin-left: 30px;
+    }
+    button{
+        padding: 8px 20px;
+    }
+    .last-para{
+        padding-left: 10px;
+    }
+  }

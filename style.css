@@ -4,6 +4,10 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+#heading-top{
+    color: wheat;
+    padding-left:230px;
+}
 
 
 .container{
@@ -72,7 +76,7 @@ button{
     border-radius: 40px;
     cursor: pointer;
 }
-ul li{
+.task-items ul li{
     list-style: none;
     padding:12px 8px 12px 50px;
     margin-top: 5px;
@@ -82,7 +86,7 @@ ul li{
     user-select: none;
     position: relative;
 }
-ul li::before{
+.task-items ul li::before{
     content: '';
     position: absolute;
     height: 25px;
@@ -94,14 +98,14 @@ ul li::before{
     top: 8px;
     left: 8px;
 }
-ul li.checked{
+.task-items ul li.checked{
     color: #555;
     text-decoration: line-through;
 }
-ul li.checked::before{
+.task-items ul li.checked::before{
     background-image: url('checked.png');
 }
-ul li span{
+.task-items ul li span{
     position: absolute;
     right: 0;
     /* top: 5px; */
@@ -113,8 +117,15 @@ ul li span{
     text-align: center;
     border-radius: 50%;
 }
-ul li span:hover{
+.task-items ul li span:hover{
     background: #edeef0;
     cursor: pointer;
 
+}
+
+.last-para{
+    color: wheat;
+    width: 100%;
+    padding-left: 400px;
+    opacity: 0.5;
 }

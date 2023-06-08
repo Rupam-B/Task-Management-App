@@ -2,13 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 
 .container{
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(135deg, #153677, #4e085f);
+    background:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
     padding: 10px;
     
 }
@@ -21,10 +22,18 @@
     border-radius: 20px;
 }
 .to-do-box h2{
-    display: flex;
+    color: #002765;
+    align-items: center;
+    margin-bottom: 20px;
+    font-weight: 900;
+    margin-left: 130px;
+    position: relative;
+    font-size: 35px;
 }
 .to-do-box h2 img{
-    display: flex;
+    
+    position: absolute;
+    top: 10px;
     height: 33px;
     width: 33px;
     margin-left: 5px;
@@ -35,30 +44,62 @@
 }
 .add-task-box{
     display: flex;
-    justify-content: center;
-    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+    background: #e7dac8;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+
     
 }
-/* .add-task-box input{
-
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
     
-} */
-/* .add-task-box span{
-
-}  */
-.add-task-box button{
+} 
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #4577ff;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 40px;
     cursor: pointer;
 }
-.task-items ul li{
+ul li{
     list-style: none;
-    padding: 5px;
+    padding:12px 8px 12px 50px;
     margin-top: 5px;
     position: relative;
-    font-size: 20px;
-
+    font-size: 17px;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-image: url('unchecked.png');
+    background-size: cover;
+    background-position: center;
+    top: 8px;
+    left: 8px;
 }
 ul li.checked{
+    color: #555;
     text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url('checked.png');
 }
 ul li span{
     position: absolute;

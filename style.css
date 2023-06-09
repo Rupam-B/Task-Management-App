@@ -113,7 +113,7 @@ button{
     height: 30px;
     font-size: 22px;
     font-weight: bold;
-    background-color: rgb(203, 204, 148);
+    /* background-color: rgb(203, 204, 148); */
     color: rgb(24, 23, 23);
     line-height: 30px;
     text-align: center;

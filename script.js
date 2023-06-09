@@ -10,7 +10,7 @@ function addTask() {
         li.innerHTML = inputTask.value;
         taskList.appendChild(li)
         let Span = document.createElement("span")
-        Span.innerHTML ="\u00d7" ;
+        Span.innerHTML = "&#128465" ;
         li.appendChild(Span)
     }
     saveData();

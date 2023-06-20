@@ -1,2 +1,2 @@
 # Task-Management-App
-https://stirring-sprinkles-c3a3db.netlify.app
+https://taask-management-app.netlify.app/
